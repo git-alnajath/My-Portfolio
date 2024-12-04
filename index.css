@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card {
+    height: 900px;
+    /* max-width: 1258px; */
+    /* min-width: 100vw; */
+    /* background-color: rgba(15, 178, 232,0.3); */
+    background-image: url("./Images/IMG_6044.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.card>.home-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 900px; 
+    
+    /* padding: 0%; */
+}
+
+.card>.home-bg>.top-btn>.btn {
+    background-color: darkorange;
+}
+
+.card>.navbar>.navbar-div>.navbar-brand {
+    font-size: 40px;
+    /* transition: color 5s; */
+    animation: naja 4s linear infinite;
+}
+
+@keyframes naja {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-360deg);
+    }
+
+    20% {
+        transform: rotateZ(100deg);
+    }
+
+    25% {
+        transform: rotateZ(-50deg);
+    }
+
+    30% {
+        transform: rotateZ(360deg);
+    }
+
+    35% {
+        transform: rotateZ(-40deg);
+    }
+
+    50% {
+        /* color: red !important; */
+        transform: scale(1.2);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+
+.dp-name {
+    top: 40%;
+    /* height: auto; */
+    width: 100%;
+    /* left: 50%; */
+    position: relative;
+    /* background-color: brown; */
+}
+
+.name>.an {
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 90px;
+    /* margin-top: -600px; */
+    /* left: 20%; */
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    animation-name: name;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    /* display: none; */
+}
+
+.profession {
+    position: absolute;
+    right: 50%;
+    /* background-color: rgba(130, 130, 130, 0.5); */
+    animation-name: prof;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+
+}
+
+@keyframes name {
+    0% {
+        left: 50%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 0;
+    }
+
+    75% {
+        left: 0%;
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+        /* display:block; */
+    }
+}
+
+@keyframes prof {
+    0% {
+        right: 50%;
+        opacity: 0;
+    }
+
+    50% {
+        right: 50%;
+        opacity: 0;
+    }
+
+    75% {
+        /* transform: translateY(50px); */
+        right: 0%;
+        opacity: 0.5;
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+        /* display:block; */
+    }
+
+}
+
+.abt1 {
+    /* font-size: 25px; */
+    color: darkorange;
+    /* color: rgb(255, 196, 0); */
+}
+
+.abt {
+
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+    /* opacity: 0.2; */
+}
+
+.about {
+    top: -40%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    filter: blur(2);
+    min-height: 550px;
+    min-width: 290px;
+
+}
+
+.about input {
+    display: none;
+}
+
+.about input:checked~.resume-details {
+    /* background-color: blueviolet; */
+    left: -28%;
+
+}
+
+.social-media {
+    top: 20%;
+    right: 5px;
+    z-index: 1000;
+    background-color: darkorange;
+}
+
+.social-media>a {
+    color: black;
+}
+
+.social-media:hover {
+    background-color: slategray !important;
+
+}
+
+.social-media:hover>a {
+    color: white !important;
+}
+
+.top-btn {
+    top: 85%;
+    right: 5px;
+    z-index: 1000;
+
+}
+
+.top-btn .btn {
+    height: 50px;
+    width: 50px;
+
+}
+
+.card2 video {
+    height: 700px;
+    /* width: 100%; */
+    object-fit: cover;
+    /* background-image: url("./Images/IMG_2642.JPEG");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.card2 button {
+    background-color: rgba(216, 216, 147, 0.2);
+    width: 150px;
+
+}
+
+
+
+.resume-details {
+    /* background-color: crimson; */
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    left: -260%;
+    transition: all 1s;
+    /* position: sticky; */
+    z-index: 999;
+    overflow: auto;
+}
+
+.resume-details>.r-candidate-name>img {
+    height: 100px;
+    width: 100px;
+}
+
+.resume-details>.r-candidate-name>.r-name {
+    font-size: 70px;
+    /* font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal; */
+    font-family: "Protest Strike", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 17px;
+}
+
+.resume-details>.r-candidate-name>.r-prof {
+    font-size: 30px;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.resume-details>.r-candidate-name>.close {
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+}
+
+.resume-details>.r-contact-details h1 {
+    font-size: 70px;
+}
+
+.resume-details>.r-candidate-name>.close>.i-close {
+    font-size: 25px;
+
+}
+
+.resume-details>.r-skills>.skill-i {
+    font-size: 25px;
+}
+
+.resume-details>.line {
+    height: 1px;
+}
+
+.card5>.bg-image {
+
+    background-image: url("./Images/prof.jpeg");
+    /* filter: blur(2px); */
+    min-height: 800px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card5>.bg-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.card5>.p-details>.pro-skills{
+    margin-top: -30px;
+}
+.card5>.p-details>.pro-skills>.pro-skill1>.dd>.bg-len{
+    background-color: green;
+}
+.card5>.p-details>.pro-skills>.pro-skill1>.p-percentage{
+    opacity: 0;
+    animation-name: p-percentage;
+    /* /* animation-timeline: view(); */
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.progress .python{
+    animation-name: python;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+.progress .django{
+    animation-name: djn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+.progress .mangodb{
+    animation-name: mdb;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+.progress .js{
+    animation-name: js;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+.progress .bootstrap{
+    animation-name: bs;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+.progress .htmlcss{
+    animation-name: htmcs;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timeline: view(); */
+}
+@keyframes python {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 75%;
+    }
+}
+@keyframes djn {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes mdb {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes js {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes bs {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes htmcs {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
+}
+.card5>.p-details>.pro-heading>.p-head{
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 65px;
+}
+
+.card3 {
+    /* background-color: rgba(0, 0, 255,0.5); */
+
+    min-height: 700px;
+
+}
+
+.card3~.e-head {
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.card3 .edu-bg {
+
+    background-image: url("./Images/clg1.jpg");
+
+    /* filter: blur(2px); */
+    /* min-height: 670px; */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card3>.e-details {
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.card4 .bg-image {
+    background-image: url("./Images/cont1.jpg");
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    filter: blur(2px);
+    min-height: 600px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card4>.c-details {
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    /* background-color: rgba(255, 255, 40, 1); */
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.card4 .c-details>.c-me-here {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+}
+
+.card4 .c-details>.c-head {
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.card4 .c-details>.c-me-here h2 {
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+/* .card4 .c-details>.form>:nth-child(5) {
+    resize: none;
+}
+
+.card4 .c-details>.form>.button>button{
+    color: white;
+    background-color: darkorange;
+} */
+
+
+
+/* .send-btn{
+    background-color: darkorange;
+ } */
+
+
+
+/* .card4>.c-details form{
+    background-color: rgba(207, 183, 138,0.2);
+} */
+
+
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+    .card {
+        background-position: center;
+    }
+
+    .name>.an {
+        font-size: 50px;
+        /* text-shadow: 1px 0px black, 0px 1px black, -1px 0px black, 0px -1px black; */
+    }
+
+    .dp-name {
+        top: 20%;
+    }
+
+    .name {
+        position: unset;
+        position: relative;
+        left: 50%;
+        animation-name: an;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+
+    .profession {
+        position: unset;
+        position: relative;
+        right: 50%;
+        animation-name: pr;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+
+    .profession>.pr {
+        /* align-self: start; */
+        position: unset;
+        font-size: 20px;
+        background-color: rgba(130, 130, 130, 0);
+        text-shadow: 0px 0px 10px black;
+        /* top: 100%; */
+    }
+
+    @keyframes an {
+        from {
+            left: 50%;
+            opacity: 0;
+        }
+
+        to {
+            left: 0%;
+            opacity: 1;
+            /* display:block; */
+        }
+    }
+
+    @keyframes pr {
+        from {
+            right: 50%;
+            opacity: 0;
+        }
+
+        to {
+            right: 0%;
+            opacity: 1;
+            /* display:block; */
+        }
+
+    }
+
+    .about input:checked~.resume-details {
+        /* background-color: blueviolet; */
+        left: 0%;
+
+    }
+
+    .about {
+        height: 700px;
+    }
+
+    .resume-details {
+        /* background-color: crimson; */
+        /* min-width: 100vw;
+        position: absolute;
+        top: 0%; */
+        left: -180%;
+        /* transition: all 1s; */
+    }
+
+    .resume-details>.r-candidate-name>.r-name {
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: normal;
+    }
+
+    .resume-details>.r-candidate-name>.r-prof {
+        font-size: 10px;
+    }
+
+    .resume-details>.r-contact-details>.res-h {
+        font-size: 20px;
+    }
+
+    .resume-details>.r-contact-details>.res {
+        font-size: 10px !important;
+    }
+
+    .resume-details>.r-contact-details>.cd-link>.res {
+        font-size: 10px !important;
+    }
+
+    .resume-details>.r-candidate-name>img {
+        margin-top: 20px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .resume-details>.r-education p:nth-child(2),
+    .resume-details>.r-education p:nth-child(3),
+    .resume-details>.r-education p:nth-child(4) {
+        /* display: none; */
+        font-size: 10px;
+    }
+
+    .resume-details>.r-education>p>.res {
+        display: none;
+    }
+
+    .resume-details>.r-skills>h1 {
+        font-size: 20px;
+    }
+
+    /* .resume-details>.r-skills>h1>span {
+        display: none;
+    } */
+
+    .resume-details>.r-skills>.skill-div>p {
+        font-size: 10px;
+    }
+
+    .resume-details>.r-projects>ul>li {
+        font-size: 20px;
+    }
+
+    .card4 .bg-image {
+        min-height: 780px;
+    }
+
+    .card5>.p-details>.pro-heading>.p-head{
+        font-family: "Anton", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 34px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .name>.an{
+        font-size: 68px;
+    }
+    .profession>.pr {
+        font-size: 25px;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .name>.an{
+        font-size: 105px;
+    }
+    .profession>.pr {
+        font-size: 40px;
+    }
+    .dp-name {
+        top: 30%;
+    }
+    .about input:checked~.resume-details {
+        /* background-color: blueviolet; */
+        left: -30%;
+
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 767px) {
+    .about input:checked~.resume-details {
+        /* background-color: blueviolet; */
+        left: 0%;
+
+    }
+
+    .resume-details {
+        /* background-color: crimson; */
+        /* width: 100vw; */
+        /* position: absolute; */
+        top: 0%;
+        left: -250%;
+        /* transition: all 1s; */
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .card3>.e-details>table>tbody>tr>td {
+        font-size: 20px;
+    }
+}
+
+
